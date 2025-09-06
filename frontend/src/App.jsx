@@ -11,7 +11,7 @@ export default function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("http://backend:8000/webhook", {
+      const res = await axios.post("VITE_API_URL", {
         resume_text: resume,
         job_description: jd,
         candidate_id: "demo",
